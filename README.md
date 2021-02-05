@@ -5,6 +5,7 @@
 # Usage
 
 **Initialization**
+cychandler can be initialized using simple arguments and code you will be needing a mongodb connection string
 ```
 const discord = require('discord.js') // Requiring Discorrd.js in our project
 const Client = new discord.Client({ws: {intents: discord.Intents.ALL}}) // We need to enable the intents to actually reacive the data when someone joins
@@ -12,7 +13,7 @@ const handler = require('cychandler')
 
 Client.on('ready', () => {  // This is triggered when the bot is online
 console.log('Ready to serve') // This is logged
-const hand = new handler.newhandler(Client, 'commands', './events', {"prefix": "!"})
+const hand = new handler(Client, 'commands', './events', {"prefix": "!"})
 .setmongopath("Your mongodb path)
 
 .setOwnerid('Your id')
@@ -20,7 +21,7 @@ const hand = new handler.newhandler(Client, 'commands', './events', {"prefix": "
 ```
 
 **Making commands**
-
+cychandler uses a simple yet effective method for commands as given below
 ```
 module.exports = {
     name: 'hello',

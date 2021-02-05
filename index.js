@@ -13,7 +13,7 @@ class newhandler {
         client.aliases = new Discord.Collection()
 
         load(this.commandpath, client)
-        Features(this.eventpath, client)
+        Features(eventpath, client)
         let pull1 = require('./commands/main/disable')
         client.cmds.set(pull1.name, pull1)
 
@@ -24,7 +24,7 @@ class newhandler {
     }
 
     setmongopath(path){
-        _mongopath = path
+        this.mongo = path
         connect(this.mongo)
         console.log('Connected to database')
         return this
@@ -36,4 +36,4 @@ class newhandler {
         return this
     }
 }
-module.exports.newhandler = newhandler
+module.exports = newhandler
