@@ -1,13 +1,12 @@
 {
   "name": "cychandler",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "",
   "main": "index.js",
   "repository": {
     "type": "git",
     "url": "https://github.com/arnav7633/cyc-handler.git"
-},
-
+  },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
