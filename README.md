@@ -1,7 +1,10 @@
 # INSTALLATION
-
+For installing cychandler run the following command!
 ```npm i cychandler```
 
+ # Support
+
+ Join my discord from [this](https://discord.gg/djrjWh2YsM) link or make a issue at the github repository [here](https://github.com/arnav7633/cyc-handler/issues)
 # Usage
 
 **Initialization**

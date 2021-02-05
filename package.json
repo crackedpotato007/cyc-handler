@@ -3,6 +3,11 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arnav7633/cyc-handler.git"
+},
+
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -14,5 +19,9 @@
     "mongoose": "^5.11.13",
     "path": "^0.12.7"
   },
-  "keywords": ["command-handler", "discord.js", "discord-bots"]
+  "keywords": [
+    "command-handler",
+    "discord.js",
+    "discord-bots"
+  ]
 }
