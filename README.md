@@ -31,6 +31,7 @@ module.exports = {
     expectedArgs: 1,
     usage: '(commandname)',
     ownerOnly: false,
+    aliases: ['hi']
     run: (client, message, argsArray, ArgsString) => {
         console.log(args)
         message.reply('Hey!')
@@ -46,7 +47,10 @@ usage - The usage of the command with the command name and expected args
 
 Owneronly - If this command is locked to the owner only 
 
+aliases - This property is used to assign other words which will trigger this command it is an array
+
 **Events**
+
 To make regular discord.js events or other features use the format given below
 ```
 module.exports = (client) => {
