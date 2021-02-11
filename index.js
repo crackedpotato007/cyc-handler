@@ -1,4 +1,4 @@
-const {load} = require('cmd-handler/load-commands')
+const {load} = require('./load-commands')
 const Discord = require('discord.js')
 const {connect} = require('./mongo')
 const {Features} = require('./EventHandler')
