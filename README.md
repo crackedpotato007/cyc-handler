@@ -25,6 +25,7 @@ const hand = new handler(Client, 'commands', './events', {"prefix": "!"})
 
 **Making commands**
 cychandler uses a simple yet effective method for commands as given below
+the command path should be like `./commands/general/hello.js`
 ```
 module.exports = {
     name: 'hello',
